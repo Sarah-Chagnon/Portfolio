@@ -1,0 +1,107 @@
+/*
+  Fichier Css pour l'exercice 3D #03
+  Par: 
+  Date:
+*/
+body {
+	margin:0px;
+	min-width:600px;
+	font-family:arial;
+}
+.bg-vert{
+	background-color:rgb(92, 184, 92); 
+	color:white;
+}
+
+.bg-bleu{
+	background-color:rgb(2, 117, 216);
+	color:white;
+}
+
+/******* Entête du fichier (partie du haut) ***********/
+.entete {
+	display: block;
+	padding: 10px;
+	height: 150px;
+	text-align: center;
+}
+h1 {
+	font-size:3em;
+}
+#logo {
+	height:110px;
+	float: left;
+}
+
+/******* Contenu principal (partie du milieu) ***********/
+.contenu-principal {
+	display: grid;
+	grid-template-columns: 1fr 250px;
+	grid-template-rows: 450px minmax( 1060 auto-fit );
+}
+@media screen and ( max-width:756px) {
+	.contenu-principal{
+		overflow: scroll;
+	}
+}
+@media screen and (min-width: 3000px) {
+	.contenu-principal{
+	grid-template-columns: minmax( 1fr auto-fit) 250px;
+		grid-template-rows: minmax( 450px auto-fit ) minmax( 1060 auto-fit );
+	}
+}
+/**** à gauche de la partie principale ****/
+.capitales {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;	
+	padding: 50px;
+	/*grid-column: 1;*/
+}
+/*   --> toutes les divisions directement dedans la classe capitales */
+.capitales > div {
+	margin: 10px;
+	padding-top: 20px;
+	width: 360px;
+	height: 450px;
+	align-items: center;
+	text-align: center;
+	min-width: none;
+
+}
+
+.capitales-photos {
+	width: 300px;
+	height: 300px;
+	border-radius: 80px;
+}
+
+/**** à droite de la partie principale ****/
+.menu {
+	/*float: right; // le grid vas le faire par lui meme*/
+	display: flexbox;
+	flex-direction: column-reverse;
+	/*grid-column: 2;*/
+	width: 250px;
+}
+/*   --> toutes les divisions directement dedans la classe menu */
+.menu > div {
+	background-color:rgba(255,255,255,.3);
+	font-size:1.3em;
+	height:  80px;
+	padding-top: 30px ;
+	text-align: center;
+	justify-content: center;
+}
+	/* --> pseudo-classe activée quand la souris passe au-dessus de la division */
+.menu > div:hover {   
+	background-color:rgba(255,255,255,.8);
+	color:darkgreen;
+}
+
+/******* Pied de page du fichier (partie du bas) ***********/
+.pied-page{
+	font-size:1.3em;
+	display: block;
+	height: 40px;
+}

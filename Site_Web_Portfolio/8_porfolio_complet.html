@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <title>Portfolio Site Web</title>
+</head>
+
+
+
+<body>
+    <header>
+        <!--navbar -->
+        <!--
+        Nous utiliserons la classe Bootstrap fixed-top dans l'élément nav pour garder la barre de navigation en haut de la page.
+        La barre de navigation a également une navbar-brand classe où nous gardons le nom de la personne en tant que marque.
+
+        La barre de navigation a les fonctionnalités suivantes :
+            Il comporte six liens : accueil, à propos, services, portfolio, contact et pied de page.
+            Il a un fond transparent. Nous ajouterons un fond sombre au défilement des pages plus tard.
+            Il bascule sur les petits appareils
+    -->
+
+        <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+            <div class="container ">
+                <a class="navbar-brand" href="#"><p>Sarah Chagnon</p></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home"><p>Accueil</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"><p>A propos</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services"><p>Services</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio"><p>Portfolio</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><p>Contact</p></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--
+        Maintenant, nous allons ajouter une image de héros avec du texte au centre.
+        Une image de héros est un terme de conception Web qui fait référence 
+        à une image pleine largeur de haute qualité 
+        qui affiche les principaux objectifs de l'entreprise ou de l'individu, 
+        une image représentative, une photo ou d'autres éléments accrocheurs. 
+        Cela aide à attirer les utilisateurs sur votre site.
+    -->
+    <main>
+        <!-- main banner -->
+        <section class="bg-gradient-RGB" id="home">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text bg-white w-hero-text">
+                        <h2 class="hero_title">Bonjour, je m'appelle Sarah Chagnon</h2>
+                        <p class="hero_desc">Je suis un développeur professionnel, diplomé du Collège de Rosemont</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+        La page À propos contient des informations importantes sur vous et votre parcours.
+        Les visiteurs de votre site de portfolio peuvent apprendre à vous connaître grâce
+        aux informations que vous fournissez sur cette page.
+        Nous ajouterons une image sur le côté gauche de la ligne,
+        et sur le côté droit, nous ajouterons notre introduction rapide dans cette section.
+
+        Cela créera une section À propos. Vous pouvez modifier le contenu en fonction de 
+        vos cas d'utilisation. Nous avons ajouté des classes nommées mt-4 et pt-4
+
+        avec une classe de conteneur qui définiront 
+        le haut de la marge et le haut du rembourrage à 1,5 rem.
+
+        La ligne comporte deux colonnes. On a la col-lg-4classe d'affichage de 
+        l'image qui occupera la colonne de gauche avec une grille en 4 parties pour les grands écrans.
+
+        La colonne suivante se voit attribuer une classe col-lg-8qui occupera 
+        la colonne de droite avec une grille en 8 parties pour les écrans plus grands. 
+        Pour les écrans moyens et petits, ils se chevaucheront, ce que nous pouvons voir
+        -->
+
+        <!-- about section-->
+        <section id="about">
+            <div class="container mt-4 pt-4 bg-pearl Section_Space">
+                <h1 class="text-center">A propos de moi</h1>
+                <div class="row mt-4">
+                    <div class="col-lg-4">
+                        <img src="images/me.jpg" class="imageAboutPage" alt="">
+                    </div>
+
+                    <div class="col-lg-8">
+                        <p> 
+                            J'ai un intéret envers la progamtion. J'adore apprendre les différents utilisations de chaque langage.
+                        </p>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Nom: Sarach Chagnon</li>
+                                    <li>Age: 19</li>
+                                    <li>Occupation: Développeur Web </li>
+                                </ul>
+                            </div>
+                        <div class="row mt-3">
+                            <p> 
+                                Je suis un étudiant <!--développeur--> web passionné qui s'intereste dans les langues de programmation. <br>
+                                Je suis prêt à écouter le client et commprendre ce qu'il demande.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--
+            Cette section aide à transformer les visiteurs du site Web en clients potentiels.
+            C'est ici que vous expliquez les services 
+            spécifiques que vous proposez et où vous ciblez les clients pour les services proposés.
+        -->
+        <!--
+            Étant donné que ce site Web est destiné aux développeurs et concepteurs Web, 
+            j'ai inclus certains des services qu'un développeur ou concepteur Web pourrait offrir.
+
+            Nous avons utilisé des cartes d'amorçage pour afficher les services. 
+            Notre section services comporte 2 lignes et 3 colonnes chacune.
+            Pour les grands écrans d'une largeur supérieure ou égale à 992px, 
+            trois cartes sont affichées à la suite. Pour les écrans de moins de 992 pixels de large,
+            une seule carte est affichée à la suite.
+        -->
+
+        <!-- services section-->
+        <section id="services" class="bg-pearl Section_Space">
+            <div class="container">
+                <h1 class="text-center">Services</h1>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="fas servicesIcon fa-clock"></i>
+                                <h4 class="card-title mt-3">Développement front-end</h4>
+                                <p class="card-text mt-3">
+                                    Concevoir la partie visible par l'utilisateur et avec laquelle il interagit Par
+                                    example l'interface, le menu, les boutons, etc. J'utiliserais le HTML pour la 
+                                    structure, le CSS ou le Bootstrap pour la mise en forme et le JavaScript pour l'interactivité.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='fas servicesIcon fa-layer-group'></i>
+                                <h4 class="card-title mt-3">Développement back-end</h4>
+                                <p class="card-text mt-3">
+                                    Gère la logique cachée, les serveurs, la sécurité et les bases de données. 
+                                    Utilise des langages comme PHP, Python, Node.js ou Java.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='far servicesIcon fa-check-circle'></i>
+                                <h4 class="card-title mt-3">Conception de site Web</h4>
+                                <p class="card-text mt-3">
+                                    Faire le process de la céation de l'interface du site web, la structure web et l'expérience 
+                                    que l'utilisateur vas avoir sur le site web.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='fas servicesIcon fa-search'></i>
+                                <h4 class="card-title mt-3">Search engine optimization (SEO)</h4>
+                                <p class="card-text mt-3">
+                                    L'optimisation de la page web dans le code Html. Assurer que
+                                    toute soit toute lisible et que ça soit le plus façile à modifier.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='fas servicesIcon fa-shield-alt'></i>
+                                <h4 class="card-title mt-3">DevOps</h4>
+                                <p class="card-text mt-3">
+                                    Faire les tests du site web vite et strucutrer pour assurer les nouvelles 
+                                    mise à jour à temps.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='fas servicesIcon fa-wrench'></i>
+                                <h4 class="card-title mt-3">QA</h4>
+                                <p class="card-text mt-3">
+                                    Faire les tests sur les nouvelles mise à jour pour assurer que
+                                    toute marche bien et que ça n'affecteras pas l'utilisateur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+            Cette section comprend votre meilleur travail. Les gens peuvent voir ce que vous êtes capable de faire,
+            et mettant en valeur un travail excellent attirera certainement plus de clients ou de recruteurs potentiels. 
+            N'ajoutez donc que votre meilleur travail dans cette section.
+
+    Nous utiliserons des cartes Bootstrap pour afficher les projets du portefeuille.
+    Il y aura 2 rangées et chaque rangée aura 3 colonnes de cartes.
+        -->
+        <!--
+            Chaque carte a une image, un titre, une description et un lien vers les projets. 
+            Trois cartes sont affichées à la suite pour les grands écrans qui ont 
+            des points d'arrêt de ≥ 992 pixels de large, mais pour les écrans < 992 pixels de large, 
+            une seule carte est affichée à la suite.
+        -->
+
+        <!-- portfolio section-->
+        <section id="portfolio" class="bg-pearl Section_Space">
+            <div class="container mt-3">
+                <h1 class="text-center">Portfolio</h1>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/CV-2.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Un resumé sur une page</h4>
+                                <p class="card-text">
+                                    Un resumé standard sur une page Html. <br>
+                                    Utilisé: HTML et CSS
+                                </p>
+                                <div class="text-center">
+                                    <a href="Other_Project/CV_V2/CV.html" class="btn btn-success">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="images/CV-3.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Un resumé sur plusieur page</h4>
+                                <p class="card-text">
+                                    Un resumé personnel qui est sur plusieur page. C'est toujour un projet en
+                                    cours qui n'est pas completement fini, mais c'est une bonne base. <br>
+                                    Utilisé: HTML, CSS et JavaScript
+                                </p>
+                                <div class="text-center">
+                                    <a href="Other_Project/CV_V3/1_Intro.html" class="btn btn-success">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="images/Ex-Web.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Exercice Website</h4>
+                                <p class="card-text">
+                                    Un exercice d'un website dans mon cour de programmation. Un devoir qui à 
+                                    été faite seule avec des nouvelles matière. <br>
+                                    Utilisé: HTML, CSS et Bootstrap
+                                </p>
+                                <div class="text-center">
+                                    <a href="Other_Project/Exercice_Website/exercice3D_03.html" class="btn btn-success">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--
+    Vous devez inclure vos coordonnées dans cette section afin que les visiteurs 
+    puissent vous contacter s'ils souhaitent vous embaucher.
+
+    Notre section de contact comprendra 2 colonnes sur une seule ligne :
+    Google maps pour l'emplacement et un formulaire de contact.
+
+    Pour intégrer la carte Google, vous devez suivre ces étapes :
+
+    allez sur https://www.embed-map.com
+    entrez votre emplacement
+    cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
+        -->
+        <!-- contact section-->
+        <section id="contact" class="bg-pearl Section_Space">
+            <div class="container mt-3 contactContent">
+                <h1 class="text-center">Contactez moi</h1>
+
+                <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+
+                        <div style="overflow:hidden;max-width:100%;width:500px;height:500px;">
+                            <div id="mymap-display" style="height:100%; width:100%;max-width:100%;">
+                                <iframe
+                                    style="height:100%;width:100%;border:0;" frameborder="0"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.555195726687!2d-73.59039522270595!3d45.55927277107558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91eb2f37e61c1%3A0x1d1d369cce463982!2s3585%20Rue%20Saint-Zotique%20Est%2C%20Montr%C3%A9al%2C%20QC%20H1X%201E5!5e0!3m2!1sen!2sca!4v1791937980972!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                                </iframe>
+                            </div><a class="embed-maphtml" rel="nofollow" href="https://dedicatedserver.expert"
+                                id="grabmap-authorization">Dedicated Server Expert</a>
+                            <style>
+                                #mymap-display img {
+                                    max-width: none !important;
+                                    background: none !important;
+                                    font-size: inherit;
+                                    font-weight: inherit;
+                                }
+                            </style>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <!-- form fields -->
+                        <form>
+                            <input type="text" class="form-control form-control-lg" placeholder="Nom">
+                            <input type="email" class="form-control mt-3" placeholder="Email">
+                            <input type="text" class="form-control mt-3" placeholder="Sujet">
+                            <div class="mb-3 mt-3">
+                                <textarea class="form-control" rows="5" id="comment" name="text"
+                                    placeholder="Détails du projet"></textarea>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-success mt-3">Contactez moi</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--
+        Nous sommes maintenant arrivés à la dernière section de cet article, qui est la section de pied de page. Nous avons déjà ajouté un lien vers la police CDN awesome dans le fichier index.html.
+
+Dans le pied de page, nous ajouterons des liens vers nos médias sociaux via des icônes de police impressionnantes.
+    -->
+    <!-- footer section-->
+    <footer>
+        <section id="footer" class="bg-pearl footer_Space">
+            <div class="container-fluid">
+                <!-- social media icons -->
+                <div class="social-icons mt-4">
+                    <a href="https://git.dti.crosemont.quebec/2514411" target="_blank"><i class="fab fa-Git-Lab">Git Lab</i></a>
+                    <a href="https://github.com/Sarah-Chagnon" target="_blank"><i class="fab fa-Git-Hub">Git Hub</i></a>
+                    <a href="https://www.linkedin.com/in/sarah-chagnon-967b23325/?isSelfProfile=true" target="_blank"><i class="fab fa-linkedin">Linkdin</i></a>
+                </div>
+                <div>
+                    <a href="" target="_top">Revenir en haut</a>
+                    <p>
+                        Page mise a jour : 13 Octobre 2026<br>
+                        Copyright 2026 - Sarah Chagnon. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

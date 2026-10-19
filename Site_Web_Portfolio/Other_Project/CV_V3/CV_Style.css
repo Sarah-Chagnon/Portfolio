@@ -1,0 +1,114 @@
+body{
+    margin:0%;
+    background-color: #111a18;
+}
+header{
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+    background-color: #043d31;
+    width: 150%;
+    box-sizing: border-box;
+    padding: 5px 10px 10px;
+    display: flex;
+}
+header h2, header li{
+        color:#edd9d3;
+        margin:10px;
+
+}
+#Banner{
+    padding: 5px;
+    box-shadow: 10px 70px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+.banner_list{
+    display: flex;             /* Activates Flexbox */
+    justify-content: center;   /* Centers the items horizontally */
+    gap: 0px;                 /* Spacing between list items */
+    list-style: none;          /* Removes default bullet points */
+    margin: 0;
+    position: absolute;
+    left: 225px;
+}   
+#Banner a{
+    text-decoration: none;     /* Removes standard underlines */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 50px;
+    margin-left: 50px;
+    margin-right: 40px;
+    transition: all 0.3s ease;
+    text-align:center;
+    /*float: center;*/
+    display: inline-block;
+    color: white;
+    text-align: center;
+}
+#Banner a:hover {
+    background-color: #032e25; /* Subtle darker highlight on hover */
+    border-radius: 15px;
+    color: #df7453;
+}
+main h1, main h2{
+    background-color: #c73104;
+    margin: 25px 15% 0px 15px;
+    padding:10px 0px 10px 30px;
+}
+main h3{
+    background-color: #c73104;
+    margin: 25px 75% 0px 15px;
+    padding:0px 0px 0px 90px;
+}
+main h4{
+    background-color: #c73104;
+    margin: 25px 75% 0px 15px;
+    padding:0px 0px 0px 30px;
+}
+main section{
+    background-color:#032e25;
+    padding: 0px 10px 10px 0px;
+    margin: 2% 0% 2% 0%;
+    color: #edd9d3;
+    
+}
+main a{
+    color: #df7453;
+}
+main table, main p, main li, main h2{
+    padding: 0px 0px 0px 30px;
+}
+
+footer{
+    background-color: #043d31;
+    width: 150%;
+    box-sizing: border-box;
+    padding: 30px 50% 0% 40%;
+    display: flex;
+    color:#edd9d3;
+    text-align: center;
+    margin-top: 10px;
+}
+footer #con{
+    padding: 50px 0% 0% 45%;
+}
+footer a{
+    color: #df7453;
+    font-size: 18px;
+    font-weight: bold;
+}
+main strong{
+        color: #df7453;
+        margin-left: 25px;
+}
+#Aca,#Pro{
+    margin-top:-50px;
+}
+.List_Pro{
+    list-style-type: none;
+}
+
